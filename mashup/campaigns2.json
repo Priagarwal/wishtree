@@ -1,0 +1,21 @@
+var campaigns =
+[
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 7.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 9.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 8.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 5.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 52.395715 , 'lng': 6.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 28.63531, 'lng': 77.22496, 'link': 'http://www.unicef.org/india/', 'title': 'UNICEF' },
+    { 'lat': 28.63531, 'lng': 77.32496, 'link': 'http://www.unicef.org/india/', 'title': 'UNICEF' }
+]

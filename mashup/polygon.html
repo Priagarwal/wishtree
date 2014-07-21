@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+<style type="text/css">
+html {height:100%}
+body {height:100%;margin:0;padding:0}
+#googleMap {height:100%}
+</style>
+<script>
+var x=new google.maps.LatLng(52.395715,4.888916);
+var stavanger=new google.maps.LatLng(58.983991,5.734863);
+var amsterdam=new google.maps.LatLng(52.395715,4.888916);
+var london=new google.maps.LatLng(51.508742,-0.120850);
+var delhi = new google.maps.LatLng(28.63531,77.22496);
+var capetown = new google.maps.LatLng(-33.92487,18.42406);
+var sydney = new google.maps.LatLng(-33.86749,151.20699);
+var chicago = new google.maps.LatLng(41.87811,-87.62980);
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:2,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var myTrip=[stavanger,amsterdam,london,delhi,sydney,capetown,chicago,stavanger];
+var flightPath=new google.maps.Polygon({
+  path:myTrip,
+  strokeColor:"#0000FF",
+  strokeOpacity:0.8,
+  strokeWeight:2,
+  fillColor:"#0000FF",
+  fillOpacity:0.4
+  });
+
+flightPath.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" ></div>
+</body>
+</html>

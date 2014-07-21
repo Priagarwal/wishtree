@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><PlaceOfferRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+  <RequesterCredentials>
+  		<eBayAuthToken>AgAAAA**AQAAAA**aAAAAA**j3FwUw**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4GhDJKKqA+dj6x9nY+seQ**V8UCAA**AAMAAA**BCnnjkaxDJN8QQ5pRYqsVEf3Ev/BmIjJ6CJ9vlAgTEkfSnypf1Lkb1ysObI1/H13J6ydyYBDKZQFH6J8kveXTp6UChEZLesqxWcJMQKFleFSWzI/FThH0P5wC5BiRDLrZesraq1pbOjGNXJ/BhQegyxB9VZSGe2JyMj0CfgmHPhvjr7rd9DYGMgpHB0ez/+KCPKXlBzq0/TuuFELHpuShqZdTxG2TOEcTcGdZV/9jL+dYjpVLK518HRSCvKAs36gMyStxg7uOadlYYWbDSfzqmekS3rs0hLBkeiuYdKRkbG5PVsOE9RwTH3OYJsZ9t8yFEqE/fGvUm9thxzwCfTfn6q7kOVLmp+UHZ+yumi/FC052P7hNpfTUQzDRGCQSyYo0NMtGHdP9HkmwutJJ45SMceyyWmau95b5QzWn1jp5jP0uF6BV/E70XIaNa7VH7CZm88W/ptpvcHSdf7PjwSLhj9w5iewksTU3ydnZK6ixDW408dxGEunlcl/b5bX+KeBRkljFzcrubpz2sbdzFDFT9OCzra5EGlTFsJOvjKRmkysWVVnkYLoGF0flBOeK4Mctqhz/NWPMebA9rfmXk1FHSzpu3Hk4+d9p+Q9Q0AgqNaj1CfLZyvDo9nHmmC7CBHw7cZzbu81E6YARdo68KVwhSQP51jtf514WFP/xTrZF1JgiObTS/UyX7NMUlZEln4VB3IXUo/4/cvulUwUogmeI45dlPtAgMCYz5L7GmjGdJbRye1fK7j4cjHd5Nf2Mnec</eBayAuthToken>
+  </RequesterCredentials>
+  
+  <EndUserIP>10.239.60.41</EndUserIP>
+  
+  <ItemID>110107957088</ItemID>
+  
+  <Offer>
+    <Action>Purchase</Action>
+    <Quantity>1</Quantity>
+    <MaxBid currencyID="USD">10.00</MaxBid>
+  </Offer>
+  
+</PlaceOfferRequest>

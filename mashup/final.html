@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+<style type="text/css">
+html {height:100%}
+body {height:100%;margin:0;padding:0}
+#googleMap {height:100%}
+</style>
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:2,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var campaigns = [
+	{ 'lat': 52.395715 , 'lng': 4.888916, 'link': 'http://www.icrc.org/eng/', 'title': 'Red Cross' 	},
+	{ 'lat': 28.63531, 'lng': 77.22496, 'link': 'http://www.unicef.org/india/', 'title': 'UNICEF' }
+	];
+var marker = new Array();
+var contentString = new Array();
+console.log("Iteration" );
+for(var i = 0; i < campaigns.length; i++) {
+	console.log("Iteration" );
+	var lat = campaigns[i].lat;
+	console.log(lat);
+	var lng = campaigns[i].lng;
+	var link = campaigns[i].link;
+	var title = campaigns[i].title;	
+	var pos=new google.maps.LatLng(lat,lng);
+	console.log(pos);
+	marker[i]=new google.maps.Marker({
+		position:pos,
+		icon:'./images/tree.gif',
+		animation:google.maps.Animation.BOUNCE
+	});
+	marker[i].setMap(map);
+	console.log(marker[i].getPosition());
+	contentString[i] = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h5 id="firstHeading" class="firstHeading">'+title+'</h3>'+
+      '<div id="bodyContent">'+
+      '<a href="'+ link +'">'+ link+'</a> '+
+      '</div>'+
+      '</div>';
+	var infowindow = new google.maps.InfoWindow({
+		content:contentString[i]
+	});
+
+	infowindow.open(map,marker[i]);
+}
+
+	google.maps.event.addListener(marker[0],'click',function() {
+	console.log(marker[0]);
+	map.setZoom(9);
+	map.setCenter(marker[0].getPosition());
+	
+  });
+google.maps.event.addListener(marker[0],'dblclick',function() {
+  map.setZoom(2);
+  map.setCenter(marker[0].getPosition());
+  });
+
+
+function placeMarker(location) {
+  var marker = new google.maps.Marker({
+    position: location,
+	icon:'./images/tree.gif',
+  animation:google.maps.Animation.BOUNCE,
+    map: map,
+  });
+   
+  return marker;
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" ></div>
+
+</body>
+</html>

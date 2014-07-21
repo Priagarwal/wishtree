@@ -1,0 +1,364 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>UploadScreen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="header">
+                <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">
+                                    <img src="./images/wishtree-logoV2.png" class="brand-logo">
+                                </a>
+                        </div>
+                </nav>
+            </div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10"><h1 id="orgName">RED-CROSS</h1></div>
+        <div class="col-sm-2"><a href="#" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNvNTmx_tkQ8H6EXttKpfPP-dnT1k5CwLseOgl1JltcOsrh_FG1q1gzuA"></a></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><!--left col-->
+              
+          <ul class="list-group">
+            <li class="list-group-item text-muted">Profile</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Joined</strong></span><span id="createdON">2.13.2014</span></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Ebay Verified</strong></span><span class="glyphicon glyphicon-ok" style='color:green;'></span></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>About us</strong></span></br><div style="text-align:left" id="OrgDescription"> Joseph Doe a sda sd/as d.as d
+                asd pas d
+                .sd sa d.Joseph Doe Joseph Doe Joseph Doe Joseph Doe Joseph Doe Joseph Doe Joseph Doe Joseph Doe</div></li>
+            
+          </ul> 
+
+          <ul class="list-group">
+            <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Total Wishes</strong></span><span id='totWishes'> 525</span></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Wishes Fullfilled</strong></span> <span id='totWishesfullfilled' >525</span></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
+          </ul> 
+               
+          <div class="panel panel-default">
+            <div class="panel-heading">Social Media</div>
+            <div class="panel-body">
+               <a style='cursor:pointer;'> <i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;<a style='cursor:pointer;'> <i class="fa fa-github fa-2x"></i> &nbsp;&nbsp;<i class="fa fa-twitter fa-2x"></i> </a>
+            </div>
+          </div>
+          
+        </div><!--/col-3-->
+        <div class="col-sm-9">
+          
+          <ul class="nav nav-tabs" id="myTab">
+            <li class="active"><a href="#home" data-toggle="tab">Campaigns</a></li>
+            <li><a href="#messages" data-toggle="tab">Inbox</a></li>
+            <li><a href="#settings" data-toggle="tab">Update Profile</a></li>
+          </ul>
+              
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Total Wishes</th>
+                      <th>Wishes Fullfilled</th>
+                      <th>Pending</th>
+                      <th>Conversion Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody id="list-campaigns">
+                    <tr>
+                      <td>1</td>
+                      <td><a class='opencampaign' data-name='Schools' href='#'>Schools</a></td>
+                      <td>62</td>
+                      <td>23</td>
+                      <td>39</td>
+                      <td>45%</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><a class='opencampaign' data-name='Disabled' href='#'>Disabled</a></td>
+                      <td>24</td>
+                      <td>17</td>
+                      <td>7</td>
+                      <td>88%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!--/table-resp-->
+              <button type="button" class="btn btn-default btn-primary btn-sm pull-right" id ="launchCampaign"style="float:left;"><i class="fa fa-plus"></i> Launch New Campaign</button>
+              
+              
+              <!-- <h4>Recent Activity</h4> -->
+              
+              <!-- <div class="table-responsive">
+                <table class="table table-hover">
+                  
+                  <tbody>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> Today, 1:00 - Jeff Manzi liked your post.</td>
+                    </tr>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> Today, 12:23 - Mark Friendo liked and shared your post.</td>
+                    </tr>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> Today, 12:20 - You posted a new blog entry title "Why social media is".</td>
+                    </tr>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> Yesterday - Karen P. liked your post.</td>
+                    </tr>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> 2 Days Ago - Philip W. liked your post.</td>
+                    </tr>
+                    <tr>
+                      <td><i class="pull-right fa fa-edit"></i> 2 Days Ago - Jeff Manzi liked your post.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+              
+             </div><!--/tab-pane-->
+             <div class="tab-pane" id="messages">
+               
+               <h2></h2>
+               
+               <ul class="list-group">
+                  <li class="list-group-item text-muted">Inbox</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Here is your a link to the latest summary report from the..</a> 2.13.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Hi Joe, There has been a request on your account since that was..</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Nullam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Thllam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Wesm sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">For therepien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Also we, havesapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">Swedish chef is assaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                  
+                </ul> 
+               
+             </div><!--/tab-pane-->
+             <div class="tab-pane" id="settings">
+                    
+                
+                  <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="first_name"><h4>First name</h4></label>
+                              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                          </div>
+                      </div>          
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="phone"><h4>Phone</h4></label>
+                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                          </div>
+                      </div>
+          
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="mobile"><h4>Mobile</h4></label>
+                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Email</h4></label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Location</h4></label>
+                              <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <label for="password"><h4>Password</h4></label>
+                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <label for="password2"><h4>Verify</h4></label>
+                              <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                      </div>
+                </form>
+              </div>
+               
+              </div><!--/tab-pane-->
+          </div><!--/tab-content-->
+          <div class='campaign-info' style='display:none;'>
+          <div class="table-responsive" style='float:left;width:50%'>
+              </br></br>
+                <h2 class='name' id="CNameBold">Campaign Name</h2>
+                </br>
+                <h4>Wishes</h4>
+                <table class="table table-hover table-striped table-bordered" id="campaignRow">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Age</th>
+                      <th>Gender</th>
+                      <th>Ebay Item ID</th>
+                      <th>Cost</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="wishes">
+                    <tr>
+                      <td>1</td>
+                      <td>Unfullfilled wishes</td>
+                      <td>62</td>
+                      <td>23</td>
+                      <td>39</td>
+                      <td>45%</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Wishname</td>
+                      <td>24</td>
+                      <td>17</td>
+                      <td>7</td>
+                      <td>88%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                 <button type="button" class="btn btn-default btn-primary btn-sm pull-right" id="addWish" style="float:left;"><i class="fa fa-plus"></i>Add Wish</button>
+                </br></br></br>
+                  <div class="form-group">
+                    <label for="exampleInputFile">Bulk Upload Wishes</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Please upload a csv file</p>
+                    <button type="button" class="btn btn-default btn-primary btn-sm" id="uploadcsv" style="float:left;">Upload</button>
+                    </br>
+                  </div>
+            </div><!--/table-resp-->
+              <div class="col-sm-3 pull-right" style='margin-top:13%'><!--left col-->
+                    
+                  <ul class="list-group">
+                      <li class="list-group-item"><strong>Wishes Uploaded</strong></li>
+                      <li class="list-group-item text-right"><span class="pull-left">Wish Name</span><span class="glyphicon glyphicon-ok" style='color:green;'>&nbsp;Wish Completed</span></li>
+                      <li class="list-group-item text-right"><span class="pull-left">Wish Name</span><span class="glyphicon glyphicon-ok" style='color:green;'>&nbsp;Wish Completed</span></li>
+                      <li class="list-group-item text-right"><span class="pull-left">Wish Name</span><span class="glyphicon glyphicon-ok" style='color:green;'>&nbsp;Wish Completed</span></li>
+                      <li class="list-group-item text-right"><span class="pull-left">Wish Name</span><span class="glyphicon glyphicon-ok" style='color:green;'>&nbsp;Wish Completed</span></li>
+                      <li class="list-group-item text-right"><span class="pull-left">Wish Name</span><span class="fa fa-exclamation" style='color:red;'>&nbsp;negative Feedback</span></li>
+
+                   </ul> 
+               </div>
+               <div class="col-sm-3 pull-right btn btn-primary btn-large" id="generate-Button"><!--left col-->
+                    Genrate the Wish Tree Button
+               </div>
+           </div>
+        </div><!--/col-9-->
+    </div><!--/row-->
+            <!-- <div class="jumbotron"> -->
+                <!-- <h1>'Allo, 'Allo!</h1> -->
+                <!-- <p class="lead">Always a pleasure scaffolding your apps.</p> -->
+                <!-- <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p> -->
+            <!-- </div> -->
+<!-- 
+            <div class="row marketing">
+                <div class="col-lg-6">
+                    <h4>HTML5 Boilerplate</h4>
+                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+
+
+                    <h4>Bootstrap</h4>
+                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+
+                    <h4>Modernizr</h4>
+                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+
+                </div>
+            </div> -->
+
+            <div class="footer">
+                <p>Ebay CopyRights Reserved</p>
+            </div>
+
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../bower_components/bootstrap/js/button.js"></script>
+        <script src="../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/validate.min.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
